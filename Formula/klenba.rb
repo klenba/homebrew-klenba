@@ -3,9 +3,9 @@
 class Klenba < Formula
   desc "End-to-end encrypted file sync"
   homepage "https://dl.klenba.app/"
-  url "https://dl.klenba.app/releases/0.1.0/klenba-0.1.0-macos-universal.tar.gz"
-  version "0.1.0"
-  sha256 "a9b4b3edf630edaab350123754041f581b914380516860b5da2e5b0a04220650"
+  url "https://dl.klenba.app/releases/0.1.1/klenba-0.1.1-macos-universal.tar.gz"
+  version "0.1.1"
+  sha256 "57c1fe15643d59a7e85d601a1f7cd6c2926da17465cf6c4a9afa5205adadacde"
   license :cannot_represent
 
   depends_on :macos
@@ -16,6 +16,6 @@ class Klenba < Formula
   end
 
   test do
-    assert_match "klenba 0.1.0 (", shell_output("#{bin}/klenba --version")
+    assert_match "klenba 0.1.1 (", shell_output("#{bin}/klenba --version")
   end
 end
